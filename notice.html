@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PBVM Bankura - Notice Board</title>
+  <meta name="description" content="PBVM Bankura official notice board for exam dates, important instructions, and reference books.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container notice-page">
+    <img src="logo.png" alt="PBVM Logo" class="logo" />
+
+    <h1 class="fade-in">পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ – বাঁকুড়া</h1>
+    <p class="subtitle fade-in delay">বাঁকুড়া জেলা বিজ্ঞান মানসিকতা ও মেধা অন্বেষণ ২০২৫</p>
+
+    <!-- Back to Home -->
+    <div class="back-wrap fade-in delay">
+      <a href="index.html" class="back-btn">← মূল পৃষ্ঠায় ফিরে যান</a>
+    </div>
+
+    <!-- Main Notice Board -->
+    <div class="notice-board-card fade-in delay">
+      <h2 class="notice-title">নোটিশ বোর্ড</h2>
+
+      <ul class="notice-list">
+        <!-- Notice 1 -->
+        <li class="notice-item">
+          <div class="notice-date">১২-০১-২০২৫</div>
+          <div class="notice-text">
+            বাঁকুড়া জেলা বিজ্ঞান মানসিকতা ও মেধা অন্বেষণ ২০২৫ এর লিখিত পরীক্ষা সম্ভাব্য তারিখ –
+            <strong>২৬-০১-২০২৫ (রবিবার)</strong>। পরীক্ষার সঠিক সময় ও কেন্দ্রের নাম প্রবেশপত্রে (Admit Card) উল্লেখ থাকবে।
+          </div>
+        </li>
+
+        <!-- Notice 2 -->
+        <li class="notice-item">
+          <div class="notice-date">১৫-০১-২০২৫</div>
+          <div class="notice-text">
+            প্রবেশপত্র (Admit Card) অনলাইনে প্রকাশের সম্ভাব্য তারিখ –
+            <strong>২০-০১-২০২৫</strong>। পরীক্ষার্থী নিজেদের বিজ্ঞান কেন্দ্র নির্বাচন করে মূল পোর্টাল থেকে Admit Card ডাউনলোড করবে।
+          </div>
+        </li>
+
+        <!-- Notice 3 -->
+        <li class="notice-item">
+          <div class="notice-date">চলমান</div>
+          <div class="notice-text">
+            ফর্ম ফিল-আপ, ফি জমা, বা Admit Card ডাউনলোড সংক্রান্ত সমস্যার জন্য নিজ নিজ
+            <strong>বিজ্ঞান কেন্দ্রের দায়িত্বপ্রাপ্ত শিক্ষক / সংগঠক</strong> এর সাথে প্রাথমিকভাবে যোগাযোগ করুন।
+          </div>
+        </li>
+
+        <!-- Notice 4 -->
+        <li class="notice-item">
+          <div class="notice-date">২০-১২-২০২৪</div>
+          <div class="notice-text">
+            পরীক্ষার রেফারেন্স বই বিতরণ <strong>২৫-১২-২০২৪</strong> থেকে নির্দিষ্ট কেন্দ্রগুলিতে শুরু হবে।
+            বই সংগ্রহের আগে অবশ্যই আপনার বিজ্ঞান কেন্দ্রের দায়িত্বপ্রাপ্ত ব্যক্তির সাথে যোগাযোগ করুন।
+          </div>
+        </li>
+      </ul>
+
+      <!-- Reference Book Section -->
+      <div class="book-section">
+        <h3 class="book-title-main">মেধা অন্বেষণ পরীক্ষার রেফারেন্স বই -</h3>
+
+        <div class="book-card">
+          <div class="book-photo-wrap">
+            <!-- change book.jpg to your real file -->
+            <img src="book.jpg" alt="মেধা অন্বেষণ রেফারেন্স বই" class="book-photo">
+          </div>
+          <div class="book-details">
+            <p class="book-name">“বিজ্ঞান মানসিকতা ও মেধা অন্বেষণ – প্রশ্ন ও উত্তর সংকলন”</p>
+            <p class="book-info">
+              এই বইতে পূর্ববর্তী বছরের নির্বাচিত প্রশ্ন, সম্ভাব্য মডেল প্রশ্ন ও বিজ্ঞান মানসিকতা গঠনের উপর ভিত্তি করে
+              সংক্ষিপ্ত আলোচনা সংকলিত রয়েছে। লিখিত পরীক্ষার প্রস্তুতিতে সহায়ক।
+            </p>
+            <p class="book-contact">
+              বই সংগ্রহের জন্য যোগাযোগঃ<br>
+              <strong>PBVM Bankura</strong><br>
+              <!-- Book contact button (replaces mobile line) -->
+              <button type="button" class="book-call-btn" onclick="toggleBookPopup()">
+                📞 বইয়ের জন্য যোগাযোগ করুন
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra info -->
+      <div class="notice-foot-note">
+        <strong>গুরুত্বপূর্ণ:</strong>
+        উপরিউক্ত তারিখ ও তথ্য প্রয়োজনে পরিবর্তিত হতে পারে। সর্বশেষ তথ্যের জন্য এই নোটিশ বোর্ডটি নিয়মিত দেখুন
+        এবং নিজ নিজ বিজ্ঞান কেন্দ্রের মাধ্যমে তথ্য যাচাই করুন।
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-copy">
+      © 2026 Paschim Banga Vigyan Mancha – Bankura. All Rights Reserved.
+    </footer>
+  </div>
+
+  <!-- Book Contact Popup -->
+<div id="bookPopup" class="contact-popup">
+  <div class="contact-box">
+    <h3>বই সংক্রান্ত যোগাযোগ</h3>
+    <p class="note">
+      রেফারেন্স বই উপলব্ধতা, মূল্য এবং সংগ্রহের জন্য নীচের বিজ্ঞান কেন্দ্রগুলিতে যোগাযোগ করুন।
+    </p>
+
+    <ul class="contact-list">
+      <li>🏛 ব্যাংকুড়া সদর:
+        <a href="tel:+919800360037">9800360037</a>
+      </li>
+      <li>🏛 সল্টোড়া:
+        <a href="tel:+919999999999">9999999999</a>
+      </li>
+      <li>🏛 ছাতনা:
+        <a href="tel:+918888888888">8888888888</a>
+      </li>
+      <li>🏛 মেজিয়া:
+        <a href="tel:+917777777777">7777777777</a>
+      </li>
+      <li>🏛 বরজোড়া:
+        <a href="tel:+916666666666">6666666666</a>
+      </li>
+    </ul>
+
+    <button class="close-btn" onclick="toggleBookPopup()">বন্ধ করুন</button>
+  </div>
+</div>
+
+<script>
+function toggleBookPopup() {
+  document.getElementById("bookPopup").classList.toggle("show");
+}
+</script>
+
+
+  <!-- VANTA Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+  <script>
+    VANTA.CLOUDS({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      backgroundColor: 0xffffff,
+      skyColor: 0x6B8BD7,
+      cloudColor: 0xADC1DE,
+      cloudShadowColor: 0x183550,
+      sunColor: 0xff9919,
+      sunGlareColor: 0xff6633,
+      sunlightColor: 0xff9933,
+      speed: 1.0
+    });
+
+    function toggleBookPopup() {
+      document.getElementById("bookPopup").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PBVM Bankura - Official Portal</title>
+  <meta name="description" content="PBVM Bankura's official website for Admit Cards, Results, and Online Form Fill-up.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Contact button INSIDE glass box, top-right -->
+    <button class="contact-btn" onclick="toggleContactPopup()" aria-label="Contact PBVM Bankura">
+      📞
+    </button>
+
+    <img src="logo.png" alt="PBVM Logo" class="logo" />
+
+    <!-- Updated Professional Title -->
+    <h1 class="fade-in">পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ – বাঁকুড়া</h1>
+    <p class="subtitle fade-in delay">বাঁকুড়া জেলা বিজ্ঞান মানসিকতা ও মেধা অন্বেষণ ২০২৫</p>
+
+    <!-- Notice Board CTA -->
+    <div class="notice-cta fade-in delay">
+      <a href="notice.html" class="btn notice-btn" target="_blank">
+        <span class="notice-icon" aria-hidden="true">🔔</span>
+        <span class="notice-text-label">Notice Board</span>
+        <span class="notice-badge">NEW</span>
+      </a>
+      <div class="notice-separator"></div>
+    </div>
+
+    <!-- Vigyan Kendra chooser -->
+    <div class="portal-chooser fade-in delay" style="margin-top:18px;">
+      <label for="kendraSelect" class="small-label"></label>
+
+      <div style="display:flex;gap:8px;align-items:center;margin-top:6px;">
+        <select id="kendraSelect" aria-label="Choose Vigyan Kendra">
+          <option value="">বিজ্ঞান কেন্দ্রটি নির্বাচন করুন</option>
+          <!-- options added by script.js -->
+        </select>
+      </div>
+
+      <p id="chooserNote" class="small-note">
+        নীচের অপশনগুলি সক্রিয় করতে আপনার বিজ্ঞান কেন্দ্রটি নির্বাচন করুন
+      </p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-group fade-in delay" style="margin-top:16px;">
+      <a href="#" id="registrationLink" class="btn disabled" target="_blank">Exam Registration</a>
+      <a href="#" id="admitCardLink" class="btn disabled" target="_blank">Admit Card Download</a>
+      <a href="#" id="resultLink" class="btn disabled" target="_blank">Result</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-copy">
+      © 2026 Paschim Banga Vigyan Mancha – Bankura. All Rights Reserved.
+    </footer>
+
+  </div>
+
+  <!-- Your JS -->
+  <script src="script.js"></script>
+
+  <!-- Required for Vanta Clouds -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+
+  <script>
+    VANTA.CLOUDS({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      backgroundColor: 0xffffff,
+      skyColor: 0x6B8BD7,
+      cloudColor: 0xADC1DE,
+      cloudShadowColor: 0x183550,
+      sunColor: 0xff9919,
+      sunGlareColor: 0xff6633,
+      sunlightColor: 0xff9933,
+      speed: 1.0
+    });
+  </script>
+
+  <!-- Contact Popup Modal -->
+  <div id="contactPopup" class="contact-popup">
+    <div class="contact-box">
+      <h3>যোগাযোগ করুন</h3>
+      <p class="note">যেকোনো তথ্য বা সাহায্যের জন্য আপনার বিজ্ঞান কেন্দ্রের সাথে যোগাযোগ করুন</p>
+
+      <ul class="contact-list">
+        <li>ব্যাংকুড়া সদর:
+          <a href="tel:+919800360037">9800360037</a>
+        </li>
+        <li>সল্টোড়া:
+          <a href="tel:+919999999999">9999999999</a>
+        </li>
+        <li>ছাতনা:
+          <a href="tel:+918888888888">8888888888</a>
+        </li>
+        <li>মেজিয়া:
+          <a href="tel:+917777777777">7777777777</a>
+        </li>
+        <li>বরজোড়া:
+          <a href="tel:+916666666666">6666666666</a>
+        </li>
+      </ul>
+
+      <button class="close-btn" onclick="toggleContactPopup()">বন্ধ করুন</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleContactPopup() {
+      document.getElementById("contactPopup").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
