@@ -603,3 +603,22 @@ h1 {
     inset 0 0 7px rgba(255,255,255,0.35),
     0 8px 20px rgba(0,0,0,0.85);
 }
+
+/* FIX MOBILE BUTTON CENTER */
+@media (max-width: 600px) {
+  .button-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .button-group a.btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 8px auto !important;
+    text-align: center;
+  }
+}
+
